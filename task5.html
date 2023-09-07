@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        table{
+            height: 100px;
+            border-collapse: collapse;
+            font-size: 20px;    
+        }
+        .inputField{
+            width:420px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1> Registration Form</h1>
+    <table border="1">
+        <tr>
+            <th><label for="fname">First Name</label></th>
+            <td><input type="text" id="fname"  class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="Lname">Last Name</label></th>
+            <td><input type="text" id="Lname" class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="email">Email</label></th>
+            <td><input type="text" id="email" class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="pass">Password</label></th>
+            <td><input type="password" id="pass" class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="re-pass">Re-enter Password</label></th>
+            <td><input type="password" id="re-pass" class="inputField"></td>
+        </tr>
+        <tr>
+            <th rowspan="2"><label for="gender"> Gender</label></th>
+            <td><input type="radio" id="gender">Male</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="gender">Female</td>
+        </tr>
+        <tr>
+            <th><label for="age">Age</label></th>
+            <td><input type="number" id="age" class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="phoneNUM">Phone Number</label></th>
+            <td><input type="number" id="phoneNUM" class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="addr">Address</label></th>
+            <td><textarea name="addr" id="addr" cols="54" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="state">State</label></th>
+            <td><input type="text" id="state" class="inputField"></td>
+        </tr>
+        <tr>
+            <th><label for="country">Country</label></th>
+            <td><select name="country" id="country">
+                <option value="">Choose your country</option>
+                <option value="india">India</option>
+                <option value="iceland">Iceland</option>
+                <option value="london">London</option>
+                <option value="america">America</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th><label for="language">Languages Known</label></th>
+            <td><input type="checkbox" id="language">English
+            <input type="checkbox" id="language">Kannada
+            <input type="checkbox" id="language">Hindi
+            <input type="checkbox" id="language">Telugu</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" id="checklist">Hereby I Declare all the given details are true</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: end;">Log in to <a href="#">Ethnus</a> website </td>
+        </tr>
+    </table>
+    <br/>
+    <input type="submit" id="register" value="Register">
+</center>
+    
+</body>
+</html>
