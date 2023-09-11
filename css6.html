@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;    
+        }
+        form{
+            width: 550px;    
+        }
+        .imgcnt{
+            text-align: center;
+            margin: 20px 0 15px 0;
+        }
+        .imgAvatar{
+            width: 150px;
+            border-radius: 50%;
+        }
+        #uname, #passwrd{
+            width: 100%;
+            padding: 8px  ;
+            margin: 4px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        button{
+            background-color: rgb(23, 183, 23);
+            width: 100%;
+            padding: 14px;
+            margin: 9px 0;
+            border: none;
+            cursor: pointer;
+            color: #ffffff;    
+        }
+        button:hover{
+            opacity: 0.9;
+        }
+        #cancelbtn{
+            background-color: red;
+            width: auto;
+            padding: 10px 19px;
+
+        }
+         
+        #forgotpswd{
+            float: right;
+            padding-top: 15px;
+        }
+        .box{
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="imgcnt">
+                <img src="avatar.png" alt="Avatar" class="imgAvatar">
+            </div>
+            
+            <div class="box">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="uname" placeholder="Enter Username" required>
+                <label for="passwrd"><b>Password</b></label>
+                <input type="password" id="passwrd" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <div class="box" style="background-color: rgb(222, 222, 222);">
+                <button type="button" id="cancelbtn" >Cancel</button>
+                <span id="forgotpswd">Forgot <a href="#">password?</a></span>
+            </div>
+            
+        </form>
+    </div>
+           
+</body>
+</html>

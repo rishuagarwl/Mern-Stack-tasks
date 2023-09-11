@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            background-color: rgb(235, 61, 90);
+        }
+        .container{
+            background-color: rgb(173, 27, 66);
+            width: 800px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            
+        } 
+        .box{
+            
+            margin:5px;
+            padding: 40px;
+            width: 550px;
+            font-size: 24px;
+            
+            color: #ffffff;
+        }  
+        #labelTag{
+            display: inline-block;
+            width:160px;
+        }
+        #button{
+            width:350px;
+            height: 50px;
+            font-size: 24px;
+            border-radius: 7px;
+        }
+        .custom{
+            width: 250px;
+            height: 25px;
+        }
+
+        
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form >
+                <label for="Fullname" id="labelTag">Name:</label>
+                <input type="text" name="Fullname" id="Fullname" placeholder="your name" class="custom" >
+                <br/> <br/>
+
+                <label for="emailName" id="labelTag">Email:</label>
+                <input type="email" name="emailName" id="emailName" placeholder="your email"  class="custom">
+                <br/> <br/>
+                <label for="password1" id="labelTag">Password:</label>
+                <input type="password" name="password1" id="password1"  class="custom">
+                <br/> <br/>
+                <label for="phoneNum" id="labelTag">Phone Number:</label>
+                <input type="tel" name="phoneNum" id="phoneNum"  class="custom">
+                <br/> <br/>
+                
+                <span id="labelTag">Gender:</span>
+
+                <label for="gender1">Male</label>
+                <input type="radio" id="gender1" name="gender">
+
+                <label for="gender2">Female</label>
+                <input type="radio" id="gender2" name="gender">
+                
+                <label for="gender3">Other</label>
+                <input type="radio" id="gender3" name="gender">
+                <br/> <br/>
+
+                <label for="lang" id="labelTag">Language</label>
+                    <select name="lang" id="lang"  class="custom">
+                        <option value="">Select language</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="marathi">Marathi</option>
+                    </select>
+
+                    <br/> <br/>
+                <label for="zipCode" id="labelTag">Zip Code:</label>
+                <input type="number" name="zipCode" id="zipCode"  class="custom">
+                <br/> <br/>
+
+                <label for="about" id="labelTag">About</label></th>
+                <textarea name="about" id="about" cols="32" rows="2" placeholder="write about yourself....."></textarea></td>
+                <br/> <br/>
+        
+                <input type="submit" id="button" value="Register">
+            </form>
+        </div>
+    </div>
+    
+   
+</body>
+</html>
