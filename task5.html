@@ -45,18 +45,20 @@
         </tr>
         <tr>
             <th rowspan="2"><label for="gender"> Gender</label></th>
-            <td><input type="radio" id="gender">Male</td>
+            <td><input type="radio" id="gender1" name="gender" >
+                <label for="gender1">Male</label></td>
         </tr>
         <tr>
-            <td><input type="radio" id="gender">Female</td>
+            <td><input type="radio" id="gender2" name="gender" >
+                <label for="gender2">Female</label></td>
         </tr>
         <tr>
             <th><label for="age">Age</label></th>
-            <td><input type="number" id="age" class="inputField"></td>
+            <td><input type="number" id="age" class="inputField" min="0" max="100"></td>
         </tr>
         <tr>
             <th><label for="phoneNUM">Phone Number</label></th>
-            <td><input type="number" id="phoneNUM" class="inputField"></td>
+            <td><input type="tel" id="phoneNUM" class="inputField"></td>
         </tr>
         <tr>
             <th><label for="addr">Address</label></th>
@@ -78,10 +80,18 @@
         </tr>
         <tr>
             <th><label for="language">Languages Known</label></th>
-            <td><input type="checkbox" id="language">English
-            <input type="checkbox" id="language">Kannada
-            <input type="checkbox" id="language">Hindi
-            <input type="checkbox" id="language">Telugu</td>
+            <td>
+                <input type="checkbox" name="language" id="checkbox1">
+                <label for="checkbox1">English</label>
+
+                <input type="checkbox" name="language" id="checkbox2">
+                <label for="checkbox2">Kannada</label>
+
+                <input type="checkbox" name="language" id="checkbox3"> 
+                <label for="checkbox3">Hindi</label>
+
+                <input type="checkbox" name="language" id="checkbox4">
+                <label for="checkbox4">Telugu</label></td>
         </tr>
         <tr>
             <td colspan="2"><input type="checkbox" id="checklist">Hereby I Declare all the given details are true</td>
